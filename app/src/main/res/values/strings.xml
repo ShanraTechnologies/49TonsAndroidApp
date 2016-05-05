@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Multi Language</string>
+    <string name="title_activity_role_selector">Role Selector Activity</string>
+
+    <string name="title_load_provider">Load Provider</string>
+    <string name="title_transporter">Transporter</string>
+
+    <string name="load_provider_description">Companies, Agents &amp; Individual Customers who has material to be transported</string>
+    <string name="transporter_description">Fleet Operators &amp; Driver-cum-Owners who transport the material</string>
+    <string name="title_identify">Identify Yourself</string>
+    <string name="continue_button_text">Continue with Selection</string>
+
+</resources>
