@@ -103,7 +103,9 @@ public class RoleSelectorActiviry extends AppCompatActivity {
 
     public void continueWithSelection(View v) {
 
-        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        Toast.makeText(getApplicationContext(), Integer.toString(pref.getInt(ROLE_SET, -1)), Toast.LENGTH_LONG).show();
+//        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+//        Toast.makeText(getApplicationContext(), Integer.toString(pref.getInt(ROLE_SET, -1)), Toast.LENGTH_LONG).show();
+
+
     }
 }
