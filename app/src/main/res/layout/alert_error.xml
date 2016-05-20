@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_gravity="center_horizontal"
-        android:src="@mipmap/green_tick" />
+        android:src="@mipmap/red_cross" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,5 +18,5 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_gravity="center"
-        android:text="Booking successful! You will receive the driver and vehicle details 30 mins prior pickup" />
+        android:text="Unfortunately we are unable to take your booking due to unavailablity of vehicles in the route / schedule. Please check sometime later. Thank you." />
 </LinearLayout>

@@ -41,7 +41,9 @@
             android:name=".Vehicle"
             android:exported="true" />
         <activity android:name=".MaterialSelector" />
-        <activity android:name=".SummaryActivity"></activity>
+        <activity android:name=".SummaryActivity" />
+        <activity android:name=".BookingStatus" />
+        <activity android:name=".TransactionsActivity"></activity>
     </application>
 
 </manifest>

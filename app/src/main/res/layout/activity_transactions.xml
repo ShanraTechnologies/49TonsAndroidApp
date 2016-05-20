@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fourthyninetons.multilanguage.TransactionsActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="3dp"
+        android:elevation="3dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context="fourthyninetons.multilanguage.SummaryActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="20dp"
+                android:text="TSGA-134534"
+                android:background="#ADD8E6"
+                android:drawableRight="@mipmap/green_tick_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:text="Hyderabad - Goa"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/truck_delivery" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:drawablePadding="10dp"
+                android:text="FMCG - Soaps, Detergents: 130 Boxes"
+                android:drawableLeft="@mipmap/package_variant_closed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:drawablePadding="10dp"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:text="23-04-2016 to 29-04-2016"
+                android:drawableLeft="@mipmap/calendar_clock" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="8dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="3dp"
+        android:elevation="3dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context="fourthyninetons.multilanguage.SummaryActivity">
+
+            <!--<RatingBar-->
+            <!--android:id="@+id/ratingBar"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:numStars="5"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:stepSize="1.0"-->
+            <!--android:rating="2.0" />-->
+            <RatingBar
+                android:id="@+id/MyRating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="2.5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="15sp"
+                android:text="Rs. 3562.00" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

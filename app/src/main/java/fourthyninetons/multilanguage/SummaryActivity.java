@@ -40,7 +40,7 @@ public class SummaryActivity extends AppCompatActivity {
                 AlertDialog.Builder alertadd = new AlertDialog.Builder(
                         SummaryActivity.this);
                 LayoutInflater factory = LayoutInflater.from(SummaryActivity.this);
-                final View view = factory.inflate(R.layout.alert_success, null);
+                final View view = factory.inflate(R.layout.alert_error, null);
                 alertadd.setView(view);
                 alertadd.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dlg, int sumthin) {

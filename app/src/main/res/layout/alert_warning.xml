@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_gravity="center_horizontal"
-        android:src="@mipmap/green_tick" />
+        android:src="@mipmap/yellow_warning" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,5 +18,5 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_gravity="center"
-        android:text="Booking successful! You will receive the driver and vehicle details 30 mins prior pickup" />
+        android:text="We have taken your booking but currently unable to confirm it. We will inform you status 30 mins prior to pickup time. Thank you." />
 </LinearLayout>

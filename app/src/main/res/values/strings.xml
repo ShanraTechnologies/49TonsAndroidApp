@@ -10,5 +10,6 @@
     <string name="title_identify">Identify Yourself</string>
     <string name="continue_button_text">Continue with Selection</string>
     <string name="title_activity_maps">Map</string>
+    <string name="rs">\u20A8</string>
 
 </resources>
