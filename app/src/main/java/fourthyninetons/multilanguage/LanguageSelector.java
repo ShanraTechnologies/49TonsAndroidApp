@@ -31,7 +31,7 @@ public class LanguageSelector extends AppCompatActivity {
         if (pref.getBoolean(LANG_PREF_SET, false)) {
 
             setLanguage(pref.getString(APP_LANG, "en"));
-            startActivity(new Intent(getApplicationContext(), MaterialSelector.class));
+            startActivity(new Intent(getApplicationContext(), SummaryActivity.class));
         }
 
         String languages[] = {"English", "हिन्दी", "मराठी"};
@@ -52,7 +52,7 @@ public class LanguageSelector extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 setAppLanguage(lang_codes[position], defaultCheckBox.isChecked());
                 dialog.dismiss();
-                startActivity(new Intent(getApplicationContext(), MaterialSelector.class));
+                startActivity(new Intent(getApplicationContext(), SummaryActivity.class));
             }
         });
         dialog.setCanceledOnTouchOutside(false);
