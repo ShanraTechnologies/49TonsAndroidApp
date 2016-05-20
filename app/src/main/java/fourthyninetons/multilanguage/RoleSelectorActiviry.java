@@ -1,6 +1,7 @@
 package fourthyninetons.multilanguage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -13,6 +14,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,8 +34,7 @@ public class RoleSelectorActiviry extends AppCompatActivity {
     CardView loadProviderCard, transporterCard;
     TextView loadProviderTV, transporterTV;
     final String ROLE_SET = "ROLE_SET";
-
-
+    Button btnContinue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +45,15 @@ public class RoleSelectorActiviry extends AppCompatActivity {
 
         transporterCard = (CardView) findViewById(R.id.cardTransporter);
         transporterTV = (TextView) findViewById(R.id.TVTransporterDesc);
+
+        btnContinue = (Button) findViewById(R.id.continueButton);
+
+        btnContinue.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+            }
+
+        });
 
         loadProviderCard.setOnClickListener(new View.OnClickListener() {
             final Handler handler = new Handler();
@@ -103,8 +113,10 @@ public class RoleSelectorActiviry extends AppCompatActivity {
 
     public void continueWithSelection(View v) {
 
-//        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-//        Toast.makeText(getApplicationContext(), Integer.toString(pref.getInt(ROLE_SET, -1)), Toast.LENGTH_LONG).show();
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        Toast.makeText(getApplicationContext(), Integer.toString(pref.getInt(ROLE_SET, -1)), Toast.LENGTH_LONG).show();
+//        startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+//
 
 
     }

@@ -122,6 +122,5 @@
         android:id="@+id/continueButton"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:text="@string/continue_button_text"
-        android:onClick="continueWithSelection" />
+        android:text="@string/continue_button_text" />
 </LinearLayout>

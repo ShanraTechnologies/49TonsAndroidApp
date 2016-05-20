@@ -9,5 +9,6 @@
     <string name="transporter_description">Fleet Operators &amp; Driver-cum-Owners who transport the material</string>
     <string name="title_identify">Identify Yourself</string>
     <string name="continue_button_text">Continue with Selection</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
